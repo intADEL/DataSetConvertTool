@@ -35,6 +35,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/."/>
+					<Add directory="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -60,6 +61,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/."/>
+					<Add directory="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -88,28 +90,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/csvreader.cpp">
-			<Option target="DatasetLabelConvert"/>
-		</Unit>
-		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/csvreader.h">
-			<Option target="DatasetLabelConvert"/>
-		</Unit>
-		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/definition.h">
-			<Option target="DatasetLabelConvert"/>
-		</Unit>
 		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/main.cpp">
 			<Option target="DatasetLabelConvert"/>
 		</Unit>
-		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/toyoloconvert.cpp">
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/csvreader.cpp">
 			<Option target="DatasetLabelConvert"/>
 		</Unit>
-		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/toyoloconvert.h">
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/csvreader.h">
 			<Option target="DatasetLabelConvert"/>
 		</Unit>
-		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/trainvalspilit.cpp">
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/ocrdataconvert.cpp">
 			<Option target="DatasetLabelConvert"/>
 		</Unit>
-		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/trainvalspilit.h">
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/ocrdataconvert.h">
+			<Option target="DatasetLabelConvert"/>
+		</Unit>
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.cpp">
+			<Option target="DatasetLabelConvert"/>
+		</Unit>
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.h">
+			<Option target="DatasetLabelConvert"/>
+		</Unit>
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/trainvalspilit.cpp">
+			<Option target="DatasetLabelConvert"/>
+		</Unit>
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/trainvalspilit.h">
 			<Option target="DatasetLabelConvert"/>
 		</Unit>
 		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeLists.txt">

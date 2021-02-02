@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/. -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/. -I/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src -isystem /usr/local/include/opencv4 
 

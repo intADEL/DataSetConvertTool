@@ -67,6 +67,16 @@ int main(int argc,char* argv[])
             spiliter->init(rawImgDir,rawLabelDir,DataSpilitedDir,Percent);
             spiliter->spilit();
         }
+        if(strcmp(argv[1],"Filename2OCR")==0){
+            cout<<"\nFilename2OCR selected:\n";
+            string rawImgDir=argv[2];
+            string rawLabelDir=argv[3];
+            string DataSpilitedDir=argv[4];
+            string Percent=argv[5];
+            trainvalspilit* spiliter=new trainvalspilit();
+            spiliter->init(rawImgDir,rawLabelDir,DataSpilitedDir,Percent);
+            spiliter->spilit();
+        }
     }
 
     return 0;

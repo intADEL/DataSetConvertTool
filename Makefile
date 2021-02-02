@@ -123,33 +123,6 @@ DatasetLabelConvert/fast:
 	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/build
 .PHONY : DatasetLabelConvert/fast
 
-csvreader.o: csvreader.cpp.o
-
-.PHONY : csvreader.o
-
-# target to build an object file
-csvreader.cpp.o:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/csvreader.cpp.o
-.PHONY : csvreader.cpp.o
-
-csvreader.i: csvreader.cpp.i
-
-.PHONY : csvreader.i
-
-# target to preprocess a source file
-csvreader.cpp.i:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/csvreader.cpp.i
-.PHONY : csvreader.cpp.i
-
-csvreader.s: csvreader.cpp.s
-
-.PHONY : csvreader.s
-
-# target to generate assembly for a file
-csvreader.cpp.s:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/csvreader.cpp.s
-.PHONY : csvreader.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -177,59 +150,113 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-toyoloconvert.o: toyoloconvert.cpp.o
+src/csvreader.o: src/csvreader.cpp.o
 
-.PHONY : toyoloconvert.o
-
-# target to build an object file
-toyoloconvert.cpp.o:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/toyoloconvert.cpp.o
-.PHONY : toyoloconvert.cpp.o
-
-toyoloconvert.i: toyoloconvert.cpp.i
-
-.PHONY : toyoloconvert.i
-
-# target to preprocess a source file
-toyoloconvert.cpp.i:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/toyoloconvert.cpp.i
-.PHONY : toyoloconvert.cpp.i
-
-toyoloconvert.s: toyoloconvert.cpp.s
-
-.PHONY : toyoloconvert.s
-
-# target to generate assembly for a file
-toyoloconvert.cpp.s:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/toyoloconvert.cpp.s
-.PHONY : toyoloconvert.cpp.s
-
-trainvalspilit.o: trainvalspilit.cpp.o
-
-.PHONY : trainvalspilit.o
+.PHONY : src/csvreader.o
 
 # target to build an object file
-trainvalspilit.cpp.o:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/trainvalspilit.cpp.o
-.PHONY : trainvalspilit.cpp.o
+src/csvreader.cpp.o:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.o
+.PHONY : src/csvreader.cpp.o
 
-trainvalspilit.i: trainvalspilit.cpp.i
+src/csvreader.i: src/csvreader.cpp.i
 
-.PHONY : trainvalspilit.i
+.PHONY : src/csvreader.i
 
 # target to preprocess a source file
-trainvalspilit.cpp.i:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/trainvalspilit.cpp.i
-.PHONY : trainvalspilit.cpp.i
+src/csvreader.cpp.i:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.i
+.PHONY : src/csvreader.cpp.i
 
-trainvalspilit.s: trainvalspilit.cpp.s
+src/csvreader.s: src/csvreader.cpp.s
 
-.PHONY : trainvalspilit.s
+.PHONY : src/csvreader.s
 
 # target to generate assembly for a file
-trainvalspilit.cpp.s:
-	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/trainvalspilit.cpp.s
-.PHONY : trainvalspilit.cpp.s
+src/csvreader.cpp.s:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.s
+.PHONY : src/csvreader.cpp.s
+
+src/ocrdataconvert.o: src/ocrdataconvert.cpp.o
+
+.PHONY : src/ocrdataconvert.o
+
+# target to build an object file
+src/ocrdataconvert.cpp.o:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o
+.PHONY : src/ocrdataconvert.cpp.o
+
+src/ocrdataconvert.i: src/ocrdataconvert.cpp.i
+
+.PHONY : src/ocrdataconvert.i
+
+# target to preprocess a source file
+src/ocrdataconvert.cpp.i:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.i
+.PHONY : src/ocrdataconvert.cpp.i
+
+src/ocrdataconvert.s: src/ocrdataconvert.cpp.s
+
+.PHONY : src/ocrdataconvert.s
+
+# target to generate assembly for a file
+src/ocrdataconvert.cpp.s:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.s
+.PHONY : src/ocrdataconvert.cpp.s
+
+src/toyoloconvert.o: src/toyoloconvert.cpp.o
+
+.PHONY : src/toyoloconvert.o
+
+# target to build an object file
+src/toyoloconvert.cpp.o:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o
+.PHONY : src/toyoloconvert.cpp.o
+
+src/toyoloconvert.i: src/toyoloconvert.cpp.i
+
+.PHONY : src/toyoloconvert.i
+
+# target to preprocess a source file
+src/toyoloconvert.cpp.i:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.i
+.PHONY : src/toyoloconvert.cpp.i
+
+src/toyoloconvert.s: src/toyoloconvert.cpp.s
+
+.PHONY : src/toyoloconvert.s
+
+# target to generate assembly for a file
+src/toyoloconvert.cpp.s:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.s
+.PHONY : src/toyoloconvert.cpp.s
+
+src/trainvalspilit.o: src/trainvalspilit.cpp.o
+
+.PHONY : src/trainvalspilit.o
+
+# target to build an object file
+src/trainvalspilit.cpp.o:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o
+.PHONY : src/trainvalspilit.cpp.o
+
+src/trainvalspilit.i: src/trainvalspilit.cpp.i
+
+.PHONY : src/trainvalspilit.i
+
+# target to preprocess a source file
+src/trainvalspilit.cpp.i:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.i
+.PHONY : src/trainvalspilit.cpp.i
+
+src/trainvalspilit.s: src/trainvalspilit.cpp.s
+
+.PHONY : src/trainvalspilit.s
+
+# target to generate assembly for a file
+src/trainvalspilit.cpp.s:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.s
+.PHONY : src/trainvalspilit.cpp.s
 
 # Help Target
 help:
@@ -240,18 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DatasetLabelConvert"
 	@echo "... edit_cache"
-	@echo "... csvreader.o"
-	@echo "... csvreader.i"
-	@echo "... csvreader.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... toyoloconvert.o"
-	@echo "... toyoloconvert.i"
-	@echo "... toyoloconvert.s"
-	@echo "... trainvalspilit.o"
-	@echo "... trainvalspilit.i"
-	@echo "... trainvalspilit.s"
+	@echo "... src/csvreader.o"
+	@echo "... src/csvreader.i"
+	@echo "... src/csvreader.s"
+	@echo "... src/ocrdataconvert.o"
+	@echo "... src/ocrdataconvert.i"
+	@echo "... src/ocrdataconvert.s"
+	@echo "... src/toyoloconvert.o"
+	@echo "... src/toyoloconvert.i"
+	@echo "... src/toyoloconvert.s"
+	@echo "... src/trainvalspilit.o"
+	@echo "... src/trainvalspilit.i"
+	@echo "... src/trainvalspilit.s"
 .PHONY : help
 
 

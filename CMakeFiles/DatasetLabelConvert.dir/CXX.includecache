@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/csvreader.cpp
-csvreader.h
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/csvreader.h
-definition.h
--
-
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/csvreader.h
-definition.h
--
-
 /home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/main.cpp
 opencv2/opencv.hpp
 -
@@ -26,25 +16,35 @@ toyoloconvert.h
 trainvalspilit.h
 -
 
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/toyoloconvert.cpp
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/csvreader.cpp
+csvreader.h
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/csvreader.h
+definition.h
+-
+
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/csvreader.h
+definition.h
+-
+
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.cpp
 toyoloconvert.h
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/toyoloconvert.h
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.h
 string.h
 -
 
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/toyoloconvert.h
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.h
 csvreader.h
 -
 definition.h
 -
 
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/trainvalspilit.cpp
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/trainvalspilit.cpp
 trainvalspilit.h
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/trainvalspilit.h
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/trainvalspilit.h
 definition.h
 -
 
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/trainvalspilit.h
+/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/trainvalspilit.h
 definition.h
 -
 
@@ -1296,10 +1296,6 @@ opencv2/videostab/global_motion.hpp
 opencv2/videostab/log.hpp
 /usr/local/include/opencv4/opencv2/videostab/opencv2/videostab/log.hpp
 
-csvreader.h
-definition.h
--
-
 definition.h
 iostream
 -
@@ -1336,13 +1332,17 @@ sstream
 iomanip
 -
 
-toyoloconvert.h
+src/csvreader.h
+definition.h
+-
+
+src/toyoloconvert.h
 csvreader.h
 -
 definition.h
 -
 
-trainvalspilit.h
+src/trainvalspilit.h
 definition.h
 -
 
