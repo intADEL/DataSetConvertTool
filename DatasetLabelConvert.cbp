@@ -105,6 +105,12 @@
 		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/ocrdataconvert.h">
 			<Option target="DatasetLabelConvert"/>
 		</Unit>
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/platecrop.cpp">
+			<Option target="DatasetLabelConvert"/>
+		</Unit>
+		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/platecrop.h">
+			<Option target="DatasetLabelConvert"/>
+		</Unit>
 		<Unit filename="/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.cpp">
 			<Option target="DatasetLabelConvert"/>
 		</Unit>

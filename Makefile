@@ -204,6 +204,33 @@ src/ocrdataconvert.cpp.s:
 	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.s
 .PHONY : src/ocrdataconvert.cpp.s
 
+src/platecrop.o: src/platecrop.cpp.o
+
+.PHONY : src/platecrop.o
+
+# target to build an object file
+src/platecrop.cpp.o:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o
+.PHONY : src/platecrop.cpp.o
+
+src/platecrop.i: src/platecrop.cpp.i
+
+.PHONY : src/platecrop.i
+
+# target to preprocess a source file
+src/platecrop.cpp.i:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.i
+.PHONY : src/platecrop.cpp.i
+
+src/platecrop.s: src/platecrop.cpp.s
+
+.PHONY : src/platecrop.s
+
+# target to generate assembly for a file
+src/platecrop.cpp.s:
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.s
+.PHONY : src/platecrop.cpp.s
+
 src/toyoloconvert.o: src/toyoloconvert.cpp.o
 
 .PHONY : src/toyoloconvert.o
@@ -276,6 +303,9 @@ help:
 	@echo "... src/ocrdataconvert.o"
 	@echo "... src/ocrdataconvert.i"
 	@echo "... src/ocrdataconvert.s"
+	@echo "... src/platecrop.o"
+	@echo "... src/platecrop.i"
+	@echo "... src/platecrop.s"
 	@echo "... src/toyoloconvert.o"
 	@echo "... src/toyoloconvert.i"
 	@echo "... src/toyoloconvert.s"

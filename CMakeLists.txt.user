@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2020-12-04T00:31:20. -->
+<!-- Written by QtCreator 4.11.0, 2021-05-20T21:02:37. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -316,7 +316,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">DatasetLabelConvert</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.DatasetLabelConvert</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">DatasetLabelConvert</value>
-    <value type="QString" key="RunConfiguration.Arguments">trainval /home/adel/labeldir /home/adel/labeldir labelmap.csv 0.7 /home/adel/labels.csv</value>
+    <value type="QString" key="RunConfiguration.Arguments">platecrop Transit /home/adel/Documents/newPlatedb/transit /home/adel/Documents/PlateDB/convertAZAD/lbls /home/adel/Documents/PlateDB/convertAZAD/imgs /home/adel/Documents/PlateDB/convertAZAD/labelmapPC.csv 2</value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
@@ -325,6 +325,7 @@
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">false</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert</value>
    </valuemap>

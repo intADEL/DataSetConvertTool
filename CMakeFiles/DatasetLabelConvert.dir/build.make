@@ -129,9 +129,33 @@ CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o.provides: CMakeFiles
 CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o.provides.build: CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o
 
 
+CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o: CMakeFiles/DatasetLabelConvert.dir/flags.make
+CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o: src/platecrop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o -c /home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/platecrop.cpp
+
+CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/platecrop.cpp > CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.i
+
+CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/platecrop.cpp -o CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.s
+
+CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.requires:
+
+.PHONY : CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.requires
+
+CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.provides: CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.requires
+	$(MAKE) -f CMakeFiles/DatasetLabelConvert.dir/build.make CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.provides.build
+.PHONY : CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.provides
+
+CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.provides.build: CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o
+
+
 CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o: CMakeFiles/DatasetLabelConvert.dir/flags.make
 CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o: src/toyoloconvert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o -c /home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.cpp
 
 CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o.provides.build: CMake
 
 CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o: CMakeFiles/DatasetLabelConvert.dir/flags.make
 CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o: src/trainvalspilit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o -c /home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/trainvalspilit.cpp
 
 CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.i: cmake_force
@@ -182,6 +206,7 @@ DatasetLabelConvert_OBJECTS = \
 "CMakeFiles/DatasetLabelConvert.dir/main.cpp.o" \
 "CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.o" \
 "CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o" \
+"CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o" \
 "CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o" \
 "CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o"
 
@@ -191,6 +216,7 @@ DatasetLabelConvert_EXTERNAL_OBJECTS =
 DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/main.cpp.o
 DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.o
 DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o
+DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o
 DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o
 DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o
 DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/build.make
@@ -247,7 +273,7 @@ DatasetLabelConvert: /usr/local/lib/libopencv_photo.so.4.2.0
 DatasetLabelConvert: /usr/local/lib/libopencv_imgproc.so.4.2.0
 DatasetLabelConvert: /usr/local/lib/libopencv_core.so.4.2.0
 DatasetLabelConvert: CMakeFiles/DatasetLabelConvert.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DatasetLabelConvert"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable DatasetLabelConvert"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DatasetLabelConvert.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -258,6 +284,7 @@ CMakeFiles/DatasetLabelConvert.dir/build: DatasetLabelConvert
 CMakeFiles/DatasetLabelConvert.dir/requires: CMakeFiles/DatasetLabelConvert.dir/main.cpp.o.requires
 CMakeFiles/DatasetLabelConvert.dir/requires: CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.o.requires
 CMakeFiles/DatasetLabelConvert.dir/requires: CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o.requires
+CMakeFiles/DatasetLabelConvert.dir/requires: CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o.requires
 CMakeFiles/DatasetLabelConvert.dir/requires: CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o.requires
 CMakeFiles/DatasetLabelConvert.dir/requires: CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o.requires
 

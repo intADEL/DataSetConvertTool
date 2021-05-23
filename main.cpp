@@ -3,12 +3,15 @@
 #include <definition.h>
 #include <toyoloconvert.h>
 #include <trainvalspilit.h>
+#include <ocrdataconvert.h>
+#include <platecrop.h>
 int main(int argc,char* argv[])
 {
     int counter;
     string labelDir;
     string imgsDir;
     string labelMap;
+    string labelFile;
     std::vector<string> labelsAddr;
 
     printf("Program Name Is: %s",argv[0]);
@@ -19,6 +22,7 @@ int main(int argc,char* argv[])
         printf("\tObj2YOLO labelDir imgsDir labelMap newImageDir labelsAddrs\n");
         printf("\ttoYOLO labelDir imgsDir labelMap labelsAddrs\n");
         printf("\ttrainval rawImgDir rawLabelDir DataSpilitedDir Percent\n");
+        printf("\tFilename2OCR ImgDir LabelDir methodnum");
 
     if(argc>=2)
     {
@@ -69,13 +73,25 @@ int main(int argc,char* argv[])
         }
         if(strcmp(argv[1],"Filename2OCR")==0){
             cout<<"\nFilename2OCR selected:\n";
-            string rawImgDir=argv[2];
-            string rawLabelDir=argv[3];
-            string DataSpilitedDir=argv[4];
-            string Percent=argv[5];
-            trainvalspilit* spiliter=new trainvalspilit();
-            spiliter->init(rawImgDir,rawLabelDir,DataSpilitedDir,Percent);
-            spiliter->spilit();
+            string ImgDir=argv[2];
+            string LabelDirName=argv[3];
+            string MethodNum=argv[4];
+            OCRDataConvert* ocr=new OCRDataConvert();
+            ocr->init(ImgDir,LabelDirName,stoi(MethodNum));
+            ocr->run();
+
+        }
+        if(strcmp(argv[1],"platecrop")==0){
+            cout<<"\nFPlate Crop selected:\n";
+            labelFile=argv[2];         
+            imgsDir=argv[3];
+            labelDir=argv[4];
+            string cropDir=argv[5];
+            labelMap=argv[6];
+            int method=stoi(argv[7]);
+            platecrop* pcrop=new platecrop();
+            pcrop->init(labelFile,imgsDir,labelDir,cropDir,labelMap,method);
+            pcrop->run();
         }
     }
 

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/main.cpp" "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/DatasetLabelConvert.dir/main.cpp.o"
   "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/csvreader.cpp" "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.o"
   "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/ocrdataconvert.cpp" "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o"
+  "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/platecrop.cpp" "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o"
   "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/toyoloconvert.cpp" "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o"
   "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/src/trainvalspilit.cpp" "/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o"
   )

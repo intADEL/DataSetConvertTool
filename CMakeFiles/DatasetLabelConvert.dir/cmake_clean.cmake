@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DatasetLabelConvert.dir/main.cpp.o"
   "CMakeFiles/DatasetLabelConvert.dir/src/csvreader.cpp.o"
   "CMakeFiles/DatasetLabelConvert.dir/src/ocrdataconvert.cpp.o"
+  "CMakeFiles/DatasetLabelConvert.dir/src/platecrop.cpp.o"
   "CMakeFiles/DatasetLabelConvert.dir/src/toyoloconvert.cpp.o"
   "CMakeFiles/DatasetLabelConvert.dir/src/trainvalspilit.cpp.o"
   "DatasetLabelConvert.pdb"
