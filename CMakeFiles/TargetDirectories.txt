@@ -1,3 +1,0 @@
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/rebuild_cache.dir
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/DatasetLabelConvert.dir
-/home/adel/Projects/Cpp/ConvertDataSetLabel/DatasetLabelConvert/CMakeFiles/edit_cache.dir
