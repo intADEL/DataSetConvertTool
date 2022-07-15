@@ -11,6 +11,8 @@ public:
     void setConfig(string labeldir,string imgdir,string labelmap, std::vector<string> labeladdrs);
     void convert();
     void convertObjs(string newImgDir);
+    void convertObjsTxtLabels(string newImgDir);
+    void convertObjsYoloLabels(string newImgDir,string newLabelDir);
     bool rect=false;
     bool augment=false;
 

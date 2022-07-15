@@ -18,6 +18,7 @@ int platecrop::init(string labelfile,string imgsDir,string labelDir,string cropI
 int platecrop::run(){
     string imgName;
     if(this->method==1){
+        //in one file , ehtemalan csv
     string labelName;
     string temp;
     string imgnameWithoutFormat;
@@ -67,6 +68,7 @@ int platecrop::run(){
     }
     }
     if(this->method==2){
+        // directory
         path p(this->imgsDir);
         if(is_directory(p)) {
             std::cout << p << " is a directory containing:\n";
@@ -87,8 +89,71 @@ int platecrop::run(){
                 string txtAddr=this->labelDir+"/"+vec[0]+".txt";
                 writeData(txtAddr,Data);
             }
+        }
+    }
+    if(this->method==3){
+        //directory txt yolo => only crop plate
+    string labelName;
+    string temp;
+    string imgnameWithoutFormat;
+    std::vector<string> vec,vec2,vec3;
+    std::vector<fs::path> txtFiles;
+    txtFiles=get_all(this->labelDir,".txt");
+    for(size_t i=0;i<txtFiles.size();i++){
+        imgName=txtFiles[i].filename().string().substr(0, txtFiles[i].filename().string().find(".")); //dataList[i][0].substr(0, dataList[i][0].size()-1);
+        if(boost::filesystem::exists(imgsDir+'/'+imgName+".jpg")){
+    CSVReader reader(txtFiles[i].string()," ");
+    cout<<"File:\t"<<txtFiles[i].string()<<endl;
+    std::vector<std::vector<std::string> > dataList = reader.getData();
+    for(size_t i=0;i<dataList.size();i++)
+    //for(std::vector<std::string> vec : dataList)
+    {
+//        cout<<"image name: "<<imgName<<endl;
+
+            labelName=dataList[i][0];
+    //        cout<<"label name: "<<labelName<<endl;
+            double roi_x=stod(dataList[i][1]);
+            double roi_y=stod(dataList[i][2]);
+            double roi_w=stod(dataList[i][3]);
+            double roi_h=stod(dataList[i][4]);
+            cv::Mat img=cv::imread(imgsDir+'/'+imgName+".jpg");
+//            cout<<"image file:\t"<<imgsDir+'/'+imgName+".jpg"<<endl;
+//            cout<<"text file: "<<txtFiles[i].filename().string()<<endl;
+//            cout<<"datalist: "<<dataList[0][0]<<endl;
+//            cout<<"(label,x,y,w,h): "<<labelName<<roi_x<<roi_y<<roi_w<<roi_h<<endl;
+            cv::Rect roi=cv::Rect(static_cast<int>((roi_x-(roi_w/2))*img.size().width)
+                                  ,static_cast<int>((roi_y-(roi_h/2))*img.size().height)
+                                  ,static_cast<int>(roi_w*img.size().width)
+                                  ,static_cast<int>(roi_h*img.size().height));
+//            cv::rectangle(img,roi,cv::Scalar(0,0,255));
+//            cv::namedWindow("img",cv::WINDOW_NORMAL);
+//            cv::imshow("img",img);
+//            cv::waitKey();
+            cv::Mat objCroped=img(roi);
+//            cv::imshow("crop",objCroped);
+//            cv::waitKey();
+            int obj_num=0;
+            string filename_jpg;
+            string token_plus_num,Data;
+            bool existBefore=false;
+            do {
+                token_plus_num=labelName+"_B_"+to_format(obj_num++);
+                filename_jpg=cropImgDir+"/"+token_plus_num+".jpg";
+                }
+            while(boost::filesystem::exists(filename_jpg));
+            cv::imwrite(this->cropImgDir+"/"+token_plus_num+".jpg",objCroped);
+//            Data=to_string(labeltoNum(labelName))
+//                    +" "+to_string(0.5)
+//                    +" "+to_string(0.5)
+//                    +" "+to_string(1.000000)
+//                    +" "+to_string(1.000000);
+//            string txtAddr=this->labelDir+"/"+token_plus_num+".txt";
+//            writeData(txtAddr,Data);
+//            cv::waitKey();
 
         }
+    }
+    }
     }
 }
 
@@ -113,4 +178,17 @@ void platecrop::writeData(string &filename, string Data){
     outfile.open(filename, std::ios_base::app);
     outfile <<Data<<endl;
     outfile.close();
+}
+std::vector<fs::path> platecrop::get_all(fs::path const & root, std::string const & ext)
+{
+    std::vector<fs::path> paths;
+    if (fs::exists(root) && fs::is_directory(root))
+    {
+        for (auto const & entry : fs::recursive_directory_iterator(root))
+        {
+            if (fs::is_regular_file(entry) && entry.path().extension() == ext)
+                paths.emplace_back(entry.path());
+        }
+    }
+    return paths;
 }

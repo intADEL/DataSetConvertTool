@@ -22,5 +22,7 @@ using namespace boost::filesystem;
 #include <boost/thread/thread.hpp>
 #include <sstream>
 #include <iomanip>
+#include "pugiconfig.hpp"
+#include "pugixml.hpp"
 
 #endif // DEFINITION_H

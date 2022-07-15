@@ -4,6 +4,7 @@
 #include <toyoloconvert.h>
 #include <trainvalspilit.h>
 #include <ocrdataconvert.h>
+#include <xmlyoloconvert.h>
 #include <platecrop.h>
 int main(int argc,char* argv[])
 {
@@ -61,6 +62,29 @@ int main(int argc,char* argv[])
             yoloConvert->setConfig(labelDir,imgsDir,labelMap,labelsAddr);
             yoloConvert->convertObjs(argv[5]);
         }
+        if(strcmp(argv[1],"Obj2YOLOtxt")==0){
+            cout<<"\nObject EXtraction to YOLO (by txt label) Convert selected:\n";
+            labelDir=argv[2];
+            imgsDir=argv[3];
+            labelMap=argv[4];
+            toyoloconvert* yoloConvert=new toyoloconvert();
+            if(strcmp(argv[6],"rect")==0){
+                yoloConvert->rect=true;
+                for(counter=7;counter<argc;counter++)
+                    labelsAddr.push_back(argv[counter]);
+            }
+            else if(argv[6]=="withaug"){
+                yoloConvert->augment=true;
+                for(counter=7;counter<argc;counter++)
+                    labelsAddr.push_back(argv[counter]);
+            }
+            else{
+            for(counter=6;counter<argc;counter++)
+                labelsAddr.push_back(argv[counter]);
+            }
+            yoloConvert->setConfig(labelDir,imgsDir,labelMap,labelsAddr);
+            yoloConvert->convertObjsTxtLabels(argv[5]);
+        }
         if(strcmp(argv[1],"trainval")==0){
             cout<<"\nTrain-Val Spiliting selected:\n";
             string rawImgDir=argv[2];
@@ -92,6 +116,51 @@ int main(int argc,char* argv[])
             platecrop* pcrop=new platecrop();
             pcrop->init(labelFile,imgsDir,labelDir,cropDir,labelMap,method);
             pcrop->run();
+        }
+        if(strcmp(argv[1],"Obj2YOLOYolo")==0){
+            cout<<"\nObject EXtraction to YOLO (by yolo label) Convert selected:\n";
+            // Obj2YOLOYolo labeldir imgsdir newImgDir newLabelDir
+            labelDir=argv[2];
+            imgsDir=argv[3];
+            labelMap=argv[3];
+            toyoloconvert* yoloConvert=new toyoloconvert();
+            if(strcmp(argv[4],"rect")==0){
+                yoloConvert->rect=true;
+                for(counter=5;counter<argc;counter++)
+                    labelsAddr.push_back(argv[counter]);
+            }
+            else if(argv[4]=="withaug"){
+                yoloConvert->augment=true;
+                for(counter=5;counter<argc;counter++)
+                    labelsAddr.push_back(argv[counter]);
+            }
+            labelsAddr.push_back(labelMap);
+            yoloConvert->setConfig(labelDir,imgsDir,labelMap,labelsAddr);
+            yoloConvert->convertObjsYoloLabels(argv[4],argv[5]);
+        }
+        if(strcmp(argv[1],"xml2yolo")==0){
+            cout<<"\nXML to YOLO Convert selected:\n";
+            labelDir=argv[2];
+            imgsDir=argv[3];
+            labelFile=argv[4];
+            labelMap=argv[5];
+            xmlyoloconvert* xmlYolo=new xmlyoloconvert();
+//            if(strcmp(argv[7],"rect")==0){
+//                yoloConvert->rect=true;
+//                for(counter=7;counter<argc;counter++)
+//                    labelsAddr.push_back(argv[counter]);
+//            }
+//            else if(argv[7]=="withaug"){
+//                yoloConvert->augment=true;
+//                for(counter=7;counter<argc;counter++)
+//                    labelsAddr.push_back(argv[counter]);
+//            }
+//            else{
+//            for(counter=7;counter<argc;counter++)
+//                labelsAddr.push_back(argv[counter]);
+//            }
+            xmlYolo->setConfig(labelDir,imgsDir,labelFile,labelMap);
+            xmlYolo->run();
         }
     }
 

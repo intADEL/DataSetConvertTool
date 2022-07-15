@@ -3,7 +3,8 @@
 
 #include "definition.h"
 #include <csvreader.h>
-
+#include <boost/filesystem.hpp>
+namespace fs = boost::filesystem;
 class platecrop
 {
 public:
@@ -22,9 +23,10 @@ private:
 
     std::string to_format(const int number) {
         std::stringstream ss;
-        ss << std::setw(2) << std::setfill('0') << number;
+        ss << std::setw(4) << std::setfill('0') << number;
         return ss.str();
     }
+    std::vector<fs::path> get_all(fs::path const & root, std::string const & ext);
 };
 
 #endif // PLATECROP_H
